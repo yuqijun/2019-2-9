@@ -1,0 +1,36 @@
+.nva
+{
+    margin-top: 2em;
+
+}
+
+.text
+{
+    margin-top: 2em;
+    padding-bottom: 3em;
+ }
+
+ .upload
+ {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 15em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+    left: 30%;
+
+ }
+
+
+ .u_bottom
+ {
+    margin: 0;
+    padding: 0;
+    margin-top : 5em;
+    clear: both;
+    margin-bottom: 2em;
+
+
+ }

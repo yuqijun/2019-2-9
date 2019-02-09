@@ -1,0 +1,47 @@
+<html>
+{% extends 'base.html'%}
+
+
+{% block main %}
+<div class="content">
+    <h1>{{question.caption}}</h1>
+    <p>{{question.content}}</p>
+    <hr style="size: 5px; clear: both;" />
+
+    <ul>
+        <li style="list-style-type: none;">
+            <div style="display: inline;">
+               <div> <img  style=" float: left; margin-lef5t:10px; width: 80px; display: block; height: 80px;" src="{{url_for('static',filename='photo/1111.jpg')}}">
+                <a href="{{url_for('user')}}"><p style="color: blue; clear:both; float:left; margin-left: 40px; margin-top: 10px;">绿水</p></a>
+               </div>
+                <p style="float: left; margin-left:60px; margin-top: -82px; display: inline;">先收藏</p>
+                <button  id="reply"  style="float: right;  display:block; clear: both; margin-bottom: 0.7em; margin-right: 40px;">回复</button>
+            </div>
+        </li>
+    </ul>
+
+<div style="clear: both;">
+    <ul>
+        <li style="list-style-type: none;">
+            <div >
+                <img  style=" float: left; margin-left:140px; width: 35px; display: inline; height: 35px;" src="{{url_for('static',filename='photo/gcb.png')}}">
+                <p style="float: left; margin-left:40px;display: inline;">第一条评论回复</p>
+            </div>
+        </li>
+    </ul>
+</div>
+    <div id="reply-form" style="clear: both;display: none;">
+        <form>
+            <div class="form-group">
+                <textarea rows="2" class="form-control" style="width: 70%; float:right;  margin-top:2em; margin-right: 40px;" placeholder="请输入信息" name="content"></textarea>
+            </div>
+
+            <div class="form-group" style="clear: both; margin-top: 15px; float: right; margin-right: 40px;">
+                <button class="btn btn-primary">确定</button>
+            </div>
+        </form>
+    </div>
+</div>
+<hr style="size: 5px; clear: both; margin-top: 10px;color:red;" />
+{%  endblock %}
+</html>

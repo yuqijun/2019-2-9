@@ -1,0 +1,31 @@
+ {% extends 'base.html' %}
+
+
+{% block title %}
+    user
+{% endblock %}
+
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/user.css')}}">
+{% endblock %}
+
+
+{% block main %}
+
+ <div>
+     <img    style="width: 150px; height: 150px; margin-top: 50px; border: 2px blue solid; padding: 10px;" src="{{url_for('static',filename='photo/2222.jpg')}}">
+ </div>
+
+	<form action = "" method = "post" enctype=multipart/form-data>
+		<div class="upload">
+        <input   style="margin: auto auto;"  type = "file" name="photo">
+        </div>
+        <div class="u_bottom">
+        <input style="margin: auto auto;"  class="btn btn-success"  type = "submit" value="上传头像">
+        </div>
+    </form>
+
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+.main{
+
+background-image: url(/static/photo/background.gif);
+background-repeat: repeat-y;
+width: 730px;
+height: 100%;
+overflow:hidden;
+}
+
+.main li
+{
+    color:	#A9A9A9;
+}
+
+.main li a
+{
+    color:	#A9A9A9;
+}
